@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomCardCell" customModule="TelaLoginCorrigida" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLc-vt-xoY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-yn-q7F">
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Wtb-1N-K19"/>
+                                    <constraint firstAttribute="width" constant="100" id="mEs-Mg-lUg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bi-Go-mRj">
+                                <rect key="frame" x="120" y="10" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjy-ui-jJk">
+                                <rect key="frame" x="10" y="120" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rP-X1-kzY">
+                                <rect key="frame" x="120" y="49.5" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="3rP-X1-kzY" firstAttribute="leading" secondItem="9zv-yn-q7F" secondAttribute="trailing" constant="10" id="0py-eb-O2C"/>
+                            <constraint firstItem="9zv-yn-q7F" firstAttribute="top" secondItem="JLc-vt-xoY" secondAttribute="top" constant="10" id="25B-57-jHU"/>
+                            <constraint firstItem="0bi-Go-mRj" firstAttribute="leading" secondItem="9zv-yn-q7F" secondAttribute="trailing" constant="10" id="5it-Ho-3jB"/>
+                            <constraint firstItem="Rjy-ui-jJk" firstAttribute="top" secondItem="9zv-yn-q7F" secondAttribute="bottom" constant="10" id="6o5-VZ-tlR"/>
+                            <constraint firstAttribute="height" constant="150" id="IYV-bT-d7a"/>
+                            <constraint firstItem="Rjy-ui-jJk" firstAttribute="leading" secondItem="9zv-yn-q7F" secondAttribute="leading" id="ImJ-B1-jeo"/>
+                            <constraint firstAttribute="trailing" secondItem="3rP-X1-kzY" secondAttribute="trailing" constant="10" id="Wfe-fT-Wuj"/>
+                            <constraint firstItem="3rP-X1-kzY" firstAttribute="centerY" secondItem="9zv-yn-q7F" secondAttribute="centerY" id="b4F-Tu-yIo"/>
+                            <constraint firstItem="9zv-yn-q7F" firstAttribute="leading" secondItem="JLc-vt-xoY" secondAttribute="leading" constant="10" id="dJd-bu-Tru"/>
+                            <constraint firstItem="0bi-Go-mRj" firstAttribute="top" secondItem="9zv-yn-q7F" secondAttribute="top" id="ipf-JQ-wWt"/>
+                            <constraint firstAttribute="trailing" secondItem="0bi-Go-mRj" secondAttribute="trailing" constant="10" id="l9V-Wn-ay0"/>
+                            <constraint firstAttribute="trailing" secondItem="Rjy-ui-jJk" secondAttribute="trailing" constant="10" id="sPl-O2-SIc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JLc-vt-xoY" secondAttribute="bottom" id="Gj5-k5-lbZ"/>
+                    <constraint firstAttribute="trailing" secondItem="JLc-vt-xoY" secondAttribute="trailing" id="g9u-rv-Kgj"/>
+                    <constraint firstItem="JLc-vt-xoY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jJY-88-Z3B"/>
+                    <constraint firstItem="JLc-vt-xoY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wsH-id-fiw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageUser" destination="9zv-yn-q7F" id="ABP-Fg-vlF"/>
+                <outlet property="labelEmail" destination="Rjy-ui-jJk" id="tU6-GC-Vn1"/>
+                <outlet property="labelFullName" destination="0bi-Go-mRj" id="45H-5t-9sy"/>
+                <outlet property="labelOffice" destination="3rP-X1-kzY" id="oyN-kG-EvW"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
